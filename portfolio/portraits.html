@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+
+    <link href="../styles/tailwind.min.css" rel="stylesheet">
+    <link href="../styles/style.css" rel="stylesheet">
+
+		<title>Adam Ryan Photography - Portraits</title>
+
+	</head>
+	<body class="font-sans font-thin">
+
+    <div class="w-full h-full relative text-white bg-gray-800">
+
+      <header id="top" class="w-full flex flex-col sm:relative pin-t pin-r pin-l">
+          <nav id="site-menu" class="flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6 py-1">
+              <div class="w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center">
+                  <a href="/index.html" class="no-underline">
+                      <img class="w-64 mx-20 my-2" src="/images/main-logo.png"/>
+                  </a>
+                  <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none" type="button" onclick="navToggle();">
+                      <span class="hamburger__top-bun"></span>
+                      <span class="hamburger__bottom-bun"></span>
+                  </button>
+              </div>
+              <div id="menu" class="w-full sm:w-auto self-end sm:self-center sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 hidden ">
+                  <a class="text-lg w-full no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2" href="/index.html">Home</a>
+                  <a class="text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="/blog.html">Blog</a>
+                  <a class="text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="../index.html#portfolio" id="currentPage">Portfolio</a>
+                  <a class="text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="http://adamryan.artfunnels.com" target="_blank">Prints</a>
+                  <a class="text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="/about.html">About</a>
+                  <a class="text-lg w-full no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2" href="/contact.html">Contact</a>
+              </div>
+          </nav>
+      </header>
+      <h4 class="mx-auto text-center text-xl md:text-3xl max-w-xl leading-tight text-white mb-4 py-20">
+          PORTRAITS
+      </h4>
+      <div class="grid">
+        <div class="grid-sizer"></div>
+        <div class="grid-item">
+          <img src="/images/portraits/portraits1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="grid-item">
+            <img src="/images/portraits/portraits5.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="grid-item">
+            <img src="/images/portraits/portraits3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="grid-item">
+          <img src="/images/portraits/portraits2.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+        <div class="grid-item">
+            <img src="/images/portraits/portraits6.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+        </div>
+        <div class="grid-item">
+            <img src="/images/portraits/portraits7.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+        </div>
+        <div class="grid-item">
+          <img src="/images/portraits/portraits8.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+        </div>
+        <div class="grid-item">
+            <img src="/images/portraits/portraits9.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+        </div>
+        <div class="grid-item">
+          <img src="/images/portraits/portraits10.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+        </div>
+        <div class="grid-item">
+          <img src="/images/portraits/portraits11.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+        </div>
+        <div class="grid-item">
+            <img src="/images/portraits/portraits12.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+        </div>
+      </div>
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 11</div>
+            <img src="/images/portraits/portraits1.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 11</div>
+            <img src="/images/portraits/portraits5.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 11</div>
+            <img src="/images/portraits/portraits3.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">4 / 11</div>
+            <img src="/images/portraits/portraits2.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">5 / 11</div>
+            <img src="/images/portraits/portraits6.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">6 / 11</div>
+            <img src="/images/portraits/portraits7.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">7 / 11</div>
+            <img src="/images/portraits/portraits8.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">8 / 11</div>
+            <img src="/images/portraits/portraits9.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">9 / 11</div>
+            <img src="/images/portraits/portraits10.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">10 / 11</div>
+            <img src="/images/portraits/portraits11.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">11 / 11</div>
+            <img src="/images/portraits/portraits12.jpg" style="width:100%">
+          </div>
+      
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+          <!-- Thumbnail image controls -->
+          <div class="sm:flex flex-col sm:flex-row">
+            <div class="column">
+              <img class="demo" src="/images/portraits/portraits1.jpg" onclick="currentSlide(1)" alt="Portraits-1">
+            </div>
+            <div class="column">
+              <img class="demo" src="/images/portraits/portraits5.jpg" onclick="currentSlide(2)" alt="Portraits-2">
+            </div>
+            <div class="column">
+              <img class="demo" src="/images/portraits/portraits3.jpg" onclick="currentSlide(3)" alt="Portraits-3">
+            </div>
+            <div class="column">
+              <img class="demo" src="/images/portraits/portraits2.jpg" onclick="currentSlide(4)" alt="Portraits-4">
+            </div>
+            <div class="column">
+              <img class="demo" src="/images/portraits/portraits6.jpg" onclick="currentSlide(5)" alt="Portraits-5">
+            </div>
+            <div class="column">
+              <img class="demo" src="/images/portraits/portraits7.jpg" onclick="currentSlide(6)" alt="Portraits-6">
+            </div>
+            <div class="column">
+              <img class="demo" src="/images/portraits/portraits8.jpg" onclick="currentSlide(7)" alt="Portraits-7">
+            </div>
+            <div class="column">
+              <img class="demo" src="/images/portraits/portraits9.jpg" onclick="currentSlide(8)" alt="Portraits-8">
+            </div>
+            <div class="column">
+              <img class="demo" src="/images/portraits/portraits10.jpg" onclick="currentSlide(9)" alt="Portraits-9">
+            </div>
+            <div class="column">
+              <img class="demo" src="/images/portraits/portraits11.jpg" onclick="currentSlide(10)" alt="Portraits-10">
+            </div>
+            <div class="column">
+              <img class="demo" src="/images/portraits/portraits12.jpg" onclick="currentSlide(11)" alt="Portraits-11">
+            </div>
+          </div>
+      </div>
+    </div>
+    <script src="../scripts/js2.js"></script>
+  </body>
+  </html>

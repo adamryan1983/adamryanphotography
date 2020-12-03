@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="styles/tailwind.min.css" rel="stylesheet">
+        <link href="styles/style.css" rel="stylesheet">
+        <link href="styles/all.css" rel="stylesheet">
+
+        <title>Adam Ryan Photography</title>
+
+    </head>
+	<body class="font-sans font-thin bg-gray-800">
+
+	    <div class="relative w-full h-full text-white">
+
+            <header id="top" class="flex flex-col w-full pin-t pin-r pin-l">
+                <nav id="site-menu" class="flex flex-col items-center justify-between w-full px-4 py-1 sm:flex-row sm:px-6">
+                    <div class="flex flex-row flex-no-wrap items-center self-start justify-between w-full sm:w-auto sm:self-center sm:flex-none">
+                        <a href="index.html" class="no-underline">
+                            <img class="w-64 mx-20 my-2" src="images/main-logo.png"/>
+                        </a>
+                        <button id="menuBtn" class="block hamburger sm:hidden focus:outline-none" type="button" onclick="navToggle();">
+                            <span class="hamburger__top-bun"></span>
+                            <span class="hamburger__bottom-bun"></span>
+                        </button>
+                    </div>
+                    <div id="menu" class="flex-col items-center self-end hidden w-full h-full py-1 pb-4 sm:w-auto sm:self-center sm:flex sm:flex-row sm:py-0 sm:pb-0 ">
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:pr-4 sm:py-1 sm:pt-2" href="index.html">Home</a>
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:px-4 sm:py-1 sm:pt-2" href="blog.html">Blog</a>
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:px-4 sm:py-1 sm:pt-2" href="index.html#portfolio">Portfolio</a>
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:px-4 sm:py-1 sm:pt-2" href="http://adamryan.artfunnels.com" target="_blank">Prints</a>
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:px-4 sm:py-1 sm:pt-2" href="about.html" id="currentPage">About</a>
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:px-4 sm:py-1 sm:pt-2" href="contact.html">Contact</a>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        
+        <h4 class="max-w-xl py-10 mx-auto mb-4 text-2xl leading-tight text-center text-white md:text-3xl">
+            About Adam Ryan Photography
+        </h4>
+        <div class="flex flex-col lg:flex-row">
+            <div class="px-4 py-2 m-2 text-gray-700">
+                <img src="images/ar3-crop.jpg" class="sm:h-auto lgobject-scale-down">
+            </div>
+            <div class="px-20 text-white">
+                <div class="py-2">
+                    <p> 
+                        Starting in 2020, I made some radical changes to my working model:
+                        <p class="py-2 text-sm italic text-pink-300">** Strictly documentary and editorial style shooting. **</p>
+                        <div class="py-2 font-semibold">What exactly does this mean?</div>
+                        Well, in simplified terms, it means I photograph stuff as it is; no staging, no posing, 
+                        no fake photoshopping, limited props, just real emotions.
+                        <br>
+                        If you're looking for a traditional photographer that 
+                        twists you into strange poses, or provides you with the same cliche photos that 
+                        everyone expects, then I am probably not a fit for you.
+                    </p>
+
+                    <div class="px-4 py-4 my-10 border-2">
+                        <h2 class="text-xl text-blue-200">Here are some reasons to hire a 
+                            <span class="italic">documentary style</span> photographer:</h2>
+                            <ul class="p-4">
+                                <li class="py-2">
+                                    When you look back at your images you’ll remember what you were feeling, 
+                                    rather than what you had been told to do by a photographer.
+                                </li>
+                                <li class="py-2">
+                                    You get to see things you didn’t even know happened.
+                                </li>
+                                <li class="py-2">
+                                    It’s perfect if you’re camera shy or self-conscious
+                                </li>
+                                <li class="py-2">
+                                    Images are fresh, dynamic and unique, as they’re not re-creations.
+                                </li>
+                            </ul>
+                        </div>
+                    <h2 class="py-2 text-2xl font-semibold">How does this work?</h2>
+
+                    <div class="px-4 pt-4 pb-2 text-lg font-semibold">Weddings</div>
+                    From the start of the day, you get to enjoy your wedding day. 
+                    It is your special day and I feel that people do not want to spend hours 
+                    upon hours of their ‘once in a lifetime’ moment being directed around for photos; 
+                    instead we will visit some locations of your choice and let you be with family 
+                    or friends and just enjoy yourselves. I will be there capturing moments as they 
+                    happen. Genuine and spontaneous.
+                    <p class="py-2">
+                        If this sounds like your ideal style then feel free to contact me and 
+                        hopefully we can cross one more thing off your wedding list:
+                    </p>
+                    <ul class="px-4">
+                        <li>
+                            <span class="text-xl font-semibold">[<span class="text-red-400">X</span>]</span>
+                            <span class="italic">Hire a photographer</span>
+                        </li>
+                    </ul>
+    
+                    <div class="px-4 pt-10 pb-2 text-lg font-semibold">
+                        Lifestyle Photo Shoots 
+                        <span class="text-sm italic font-bold"> (STRICTLY BLACK AND WHITE ONLY)</span>
+                    </div>
+                    You choose the location, I do the shooting. Whether it’s a family photo shoot, 
+                    portrait shoot, or anything else you may want to have photographed, 
+                    you are free to engage with each other or your surroundings and I’ll make 
+                    sure to capture the real moments as they unfold.
+
+                    <div class="px-4 pt-10 pb-2 text-lg font-semibold">
+                        Portrait Photo Shoots
+                    </div>
+                    These are traditional photo shoots exclusively for individual sessions. 
+                    These can be grad shoots, cap and gown photos, headshots, or a photo shoot that 
+                    you may want for a portfolio.
+
+                    <div class="py-10 pb-10">
+                        <div class="font-bold">
+                            I do not perform the following types of photography:
+                        </div>  
+                        <ul>
+                            <li>
+                                * Traditional posed family shoots
+                            </li>
+                            <li>
+                                * Boudoir shoots
+                            </li>
+                            <li>
+                                * Sports photography
+                            </li>
+                            <li>
+                                * Maternity shoots
+                            </li>
+                            <li>
+                                * Newborn/infant/toddler shoots
+                            </li>
+                        </ul>
+                        <div class="py-8 italic">
+                            Also, I do not do shoots for children under the age of 10, unless they are
+                            part of the lifestyle photo shoot with their parents.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<div class="fixed bottom-0 w-full text-gray-100 bg-gray-900">
+
+            <footer class="social-footer">
+                <div class="social-footer-icons">
+                    <ul>
+                    <li><a class="px-20 text-white" href="#top" id="topBtn">Back To Top</a></li>
+                    <li><a href="https://adamryan.artfunnels.com" target="_blank" title="View my gallery"><i class="fas fa-camera" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/adamryanphoto" title="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/adamryanphotography" title="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="mailto:adam@adamryanphotography.ca" title="Email me!"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+
+              </footer>
+
+        <script src="scripts/javascript.js"></script>
+	</body>
+</html>

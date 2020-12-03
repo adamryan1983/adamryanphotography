@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="styles/tailwind.min.css" rel="stylesheet">
+        <link href="styles/style.css" rel="stylesheet">
+        <link href="styles/all.css" rel="stylesheet">
+
+        <script src="scripts/ScrollMagic.js"></script>
+
+		<title>Adam Ryan Photography</title>
+
+	</head>
+	<body class="font-sans font-thin">
+
+		<div class="relative w-full h-screen text-white">
+			<img src="images/landing2.jpg" class="absolute top-0 left-0 object-cover w-full h-full" />
+
+            <header id="top" class="fixed flex flex-col w-full sm:relative pin-t pin-r pin-l">
+                <nav id="site-menu" class="flex flex-col items-center justify-between w-full px-4 py-1 sm:flex-row sm:px-6">
+                    <div class="flex flex-row flex-no-wrap items-center self-start justify-between w-full sm:w-auto sm:self-center sm:flex-none">
+                        <a href="#" class="no-underline">
+                            <img class="w-64 mx-20 my-2" src="images/main-logo.png"/>
+                        </a>
+                        <button id="menuBtn" class="block hamburger sm:hidden focus:outline-none" type="button" onclick="navToggle();">
+                            <span class="hamburger__top-bun"></span>
+                            <span class="hamburger__bottom-bun"></span>
+                        </button>
+                    </div>
+                    <div id="menu" class="flex-col items-center self-end hidden w-full h-full py-1 pb-4 text-black sm:w-auto sm:self-center sm:flex sm:flex-row sm:py-0 sm:pb-0 md:text-white">
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:pr-4 sm:py-1 sm:pt-2" href="index.html" target="_blank" id="currentPage">Home</a>
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:px-4 sm:py-1 sm:pt-2" href="blog.html">Blog</a>
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:px-4 sm:py-1 sm:pt-2" href="#portfolio">Portfolio</a>
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:px-4 sm:py-1 sm:pt-2" href="http://adamryan.artfunnels.com" target="_blank">Prints</a>
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:px-4 sm:py-1 sm:pt-2" href="about.html">About</a>
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:px-4 sm:py-1 sm:pt-2" href="contact.html">Contact</a>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        
+
+		<div class="px-6 py-24">
+
+			<div class="max-w-6xl mx-auto mb-12">
+				
+				<h2 class="max-w-3xl mx-auto mb-12 text-2xl leading-tight text-center text-gray-800 md:text-5xl">
+                    Newfoundland Based Documentary Photographer
+                </h2>
+
+
+				<p class="max-w-lg mx-auto mb-6 leading-relaxed text-center text-gray-600">
+                    I specialize in capturing real moments. Most of my photography is unposed and doesn't use any props.
+                    Types of photography I cover are: portraits, scenery, weddings, and live/event photography.
+                </p>
+
+
+				<p class="max-w-lg mx-auto leading-relaxed text-center text-gray-600">For more photography check my <a href="https://instagram.com/adamryanphoto" class="text-black">Instagram</a></p>
+
+            </div>
+
+            <h4  id="portfolio" class="max-w-xl mx-auto mb-4 text-xl leading-tight text-center text-gray-800 md:text-3xl">
+                Portfolio
+            </h4>
+ 
+			<div class="flex flex-wrap max-w-5xl mx-auto overflow-hidden">
+                    <div class="w-full p-4 mb-12 md:w-1/2 digit">
+                        <a href="portfolio/weddings.html">
+                        <img src="images/weddings.jpg" class="block w-full h-auto mb-12" /></a>
+                        <a href="portfolio/weddings.html" class="block mb-6 text-2xl text-center text-black">Weddings</a>
+                        <p class="mb-6 text-sm leading-relaxed text-center text-gray-600">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        <a href="portfolio/weddings.html" class="block text-center text-black">Read more</a>
+                    </div>
+                    <div class="w-full p-4 mb-12 md:w-1/2 digit">
+                        <a href="portfolio/portraits.html">
+                        <img src="images/portraits.jpg" class="block w-full h-auto mb-12" /></a>
+                        <a href="portfolio/portraits.html" class="block mb-6 text-2xl text-center text-black">Portraits</a>
+                        <p class="mb-6 text-sm leading-relaxed text-center text-gray-600">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        <a href="portfolio/portraits.html" class="block text-center text-black">Read more</a>
+                    </div>
+                    <div class="w-full p-4 mb-12 md:w-1/2 digit">
+                        <a href="portfolio/music.html">
+                        <img src="images/music.jpg" class="block w-full h-auto mb-12" /></a>
+                        <a href="portfolio/music.html" class="block mb-6 text-2xl text-center text-black">Music/Live</a>
+                        <p class="mb-6 text-sm leading-relaxed text-center text-gray-600">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        <a href="portfolio/music.html" class="block text-center text-black">Read more</a>
+                    </div>
+                    <div class="w-full p-4 mb-12 md:w-1/2 digit">
+                        <a href="portfolio/scenery.html">
+                        <img src="images/scenery.jpg" class="block w-full h-auto mb-12" /></a>
+                        <a href="portfolio/scenery.html" class="block mb-6 text-2xl text-center text-black">Scenery</a>
+                        <p class="mb-6 text-sm leading-relaxed text-center text-gray-600">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        <a href="portfolio/scenery.html" class="block text-center text-black">Read more</a>
+                    </div>
+            </div>
+
+            <h4 id="instagram" class="max-w-xl mx-auto mb-4 text-xl leading-tight text-center text-gray-800 md:text-3xl">
+                Instagram Feed
+            </h4>
+            <div class="flex flex-wrap items-start max-w-5xl mx-auto">
+                <!-- LightWidget WIDGET -->
+                <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+                <iframe 
+                    src="http://lightwidget.com/widgets/f6e358bd4ec6548f83b96299cbfed777.html" 
+                    scrolling="no" 
+                    allowtransparency="true" 
+                    class="lightwidget-widget" 
+                    style="width:100%;border:0;overflow:hidden;">
+                </iframe>
+            </div>
+
+        </div>
+
+        <div class="fixed bottom-0 w-full text-gray-100 bg-gray-900">
+
+            <footer class="social-footer">
+                <div class="social-footer-icons">
+                    <ul>
+                    <li><a class="px-20 text-white" href="#top" id="topBtn">Back To Top</a></li>
+                    <li><a href="https://adamryan.artfunnels.com" target="_blank" title="View my gallery"><i class="fas fa-camera" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/adamryanphoto" title="Instagram" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/adamryanphotography" title="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="mailto:adam@adamryanphotography.ca" title="Email me!"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                </footer>
+        </div>
+
+    <script src="scripts/javascript.js"></script>
+	</body>
+</html>

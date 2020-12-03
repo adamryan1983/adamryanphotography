@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- <link href="styles/tailwind.min.css" rel="stylesheet"> -->
+        <link href="styles/tailwind.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/all.css">
+
+        <script src="scripts/ScrollMagic.js"></script>
+
+		<title>Adam Ryan Photography - Blog</title>
+
+	</head>
+      <body class="font-sans font-thin">
+    
+        <div class="relative w-full h-full bg-gray-800">
+
+            <header id="top" class="flex flex-col w-full text-white sm:relative pin-t pin-r pin-l">
+                <nav id="site-menu" class="flex flex-col items-center justify-between w-full px-4 py-1 sm:flex-row sm:px-6">
+                    <div class="flex flex-row flex-no-wrap items-center self-start justify-between w-full sm:w-auto sm:self-center sm:flex-none">
+                        <a href="#" class="no-underline">
+                            <img class="w-64 mx-20 my-2" src="images/main-logo.png"/>
+                        </a>
+                        <button id="menuBtn" class="block hamburger sm:hidden focus:outline-none" type="button" onclick="navToggle();">
+                            <span class="hamburger__top-bun"></span>
+                            <span class="hamburger__bottom-bun"></span>
+                        </button>
+                    </div>
+                    <div id="menu" class="flex-col items-center self-end hidden w-full h-full py-1 pb-4 sm:w-auto sm:self-center sm:flex sm:flex-row sm:py-0 sm:pb-0 ">
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:pr-4 sm:py-1 sm:pt-2" href="index.html">Home</a>
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:px-4 sm:py-1 sm:pt-2" href="blog.html" id="currentPage">Blog</a>
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:px-4 sm:py-1 sm:pt-2" href="index.html#portfolio">Portfolio</a>
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:px-4 sm:py-1 sm:pt-2" href="http://adamryan.artfunnels.com" target="_blank">Prints</a>
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:px-4 sm:py-1 sm:pt-2" href="about.html">About</a>
+                        <a class="w-full py-2 text-lg no-underline sm:w-auto sm:px-4 sm:py-1 sm:pt-2" href="contact.html">Contact</a>
+                    </div>
+                </nav>
+            </header>
+
+            <h4 class="max-w-xl py-20 mx-auto mb-4 text-4xl leading-tight text-center text-white md:text-3xl">
+                BLOG
+            </h4>
+            <h6 class="py-20 mx-auto mb-4 text-3xl leading-tight text-center text-gray-400 md:text-2xl max-w-l">
+                Coming soon...
+            </h6>
+
+            <!--Blog Here-->
+            <div class="container flex flex-wrap justify-center py-6 mx-auto">
+                <!-- Posts Section -->
+                <section class="flex flex-col items-center w-full px-3 md:w-2/3">
+        
+                    <article class="flex flex-col my-4 shadow">
+                        <!-- Article Image -->
+                        <a href="#" class="hover:opacity-75">
+                            <img src="blog/2020/sept/1/blog1preview.jpg">
+                        </a>
+                        <div class="flex flex-col justify-start p-6 bg-white">
+                            <a href="blog/2020/sept/1/post.html" class="pb-4 text-sm font-bold text-blue-700 uppercase">Wedding</a>
+                            <a href="blog/2020/sept/1/post.html" class="pb-4 text-3xl font-bold hover:text-gray-700">This and That's Wedding Day</a>
+                            <p href="blog/2020/sept/1/post.html" class="pb-3 text-sm">
+                                By <a href="mailto:adam@adamryanphotography.ca" class="font-semibold hover:text-gray-800">Adam Ryan</a>, Published on Sept 1, 2020
+                            </p>
+                            <a href="blog/2020/sept/1/post.html" class="pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..</a>
+                            <a href="blog/2020/sept/1/post.html" class="text-gray-800 uppercase hover:text-thirdColor">Continue Reading <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+        
+                    <article class="flex flex-col my-4 shadow">
+                        <!-- Article Image -->
+                        <a href="#" class="hover:opacity-75">
+                            <img src="https://source.unsplash.com/collection/1346951/1000x500?sig=2">
+                        </a>
+                        <div class="flex flex-col justify-start p-6 bg-white">
+                            <a href="#" class="pb-4 text-sm font-bold text-blue-700 uppercase">Automotive, Finance</a>
+                            <a href="#" class="pb-4 text-3xl font-bold hover:text-gray-700">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</a>
+                            <p href="#" class="pb-3 text-sm">
+                                By <a href="#" class="font-semibold hover:text-gray-800">David Grzyb</a>, Published on January 12th, 2020
+                            </p>
+                            <a href="#" class="pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..</a>
+                            <a href="#" class="text-gray-800 uppercase hover:text-black">Continue Reading <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+        
+                    <article class="flex flex-col my-4 shadow">
+                        <!-- Article Image -->
+                        <a href="#" class="hover:opacity-75">
+                            <img src="https://source.unsplash.com/collection/1346951/1000x500?sig=3">
+                        </a>
+                        <div class="flex flex-col justify-start p-6 bg-white">
+                            <a href="#" class="pb-4 text-sm font-bold text-blue-700 uppercase">Sports</a>
+                            <a href="#" class="pb-4 text-3xl font-bold hover:text-gray-700">Lorem Ipsum Dolor Sit Amet Dolor Sit Amet</a>
+                            <p href="#" class="pb-3 text-sm">
+                                By <a href="#" class="font-semibold hover:text-gray-800">David Grzyb</a>, Published on October 22nd, 2019
+                            </p>
+                            <a href="#" class="pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..</a>
+                            <a href="#" class="text-gray-800 uppercase hover:text-black">Continue Reading <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+        
+                    <!-- Pagination -->
+                    <div class="flex items-center py-8">
+                        <a href="#" class="flex items-center justify-center w-10 h-10 text-sm font-semibold text-white bg-blue-800 hover:bg-blue-600">1</a>
+                        <a href="#" class="flex items-center justify-center w-10 h-10 text-sm font-semibold text-gray-200 hover:bg-blue-600 hover:text-white">2</a>
+                        <a href="#" class="flex items-center justify-center w-10 h-10 ml-3 text-sm font-semibold text-gray-200 hover:text-gray-900">Next <i class="ml-2 fas fa-arrow-right"></i></a>
+                    </div>
+        
+                </section>
+        
+
+            <div class="pb-20 bg-gray-800"></div>
+            <div class="fixed bottom-0 w-full text-gray-100 bg-gray-900">
+
+            <footer class="social-footer">
+                <div class="social-footer-icons">
+                    <ul>
+                    <li><a class="px-20 text-white" href="#top" id="topBtn">Back To Top</a></li>
+                    <li><a href="https://adamryan.artfunnels.com" target="_blank" title="View my gallery"><i class="fas fa-camera" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/adamryanphoto" title="Instagram" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/adamryanphotography" title="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="mailto:adam@adamryanphotography.ca" title="Email me!"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                </footer>
+        </div>
+        <script src="/scripts/javascript.js"></script>
+    </body>
+</html>
