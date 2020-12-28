@@ -50,3 +50,8 @@ if (e.target.nodeName === "IMG") {
     // alert("Saving images disabled")
 }
 }, false);
+
+
+/***************************/
+/* check for bots on form  */
+/**************************/
